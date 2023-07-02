@@ -20,23 +20,35 @@ class LanguageCell extends StatefulWidget {
 class _LanguageCellState extends State<LanguageCell> {
   @override
   Widget build(BuildContext context) {
-    return GestureDetector(
-      onTap: widget.onButtonPressed,
-      behavior: HitTestBehavior.translucent,
-      child: Padding(
-        padding: const EdgeInsets.fromLTRB(19, 10, 19, 10),
-        child: Row(
-          children: [
-            SizedBox(width: 30, child: widget.language.image),
-            const SizedBox(width: 10),
-            Text(widget.language.name),
-            const Spacer(flex: 1),
-            SizedBox(
-                width: 20,
-                child: widget.isChecked
-                    ? Image.asset("assets/icon_Selected.png")
-                    : Image.asset("assets/icon_Unselect.png")),
-          ],
+    return Padding(
+      padding: const EdgeInsets.fromLTRB(16, 4, 16, 4),
+      child: ElevatedButton(
+        style: ElevatedButton.styleFrom(
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(8.0),
+            // side: const BorderSide(color: Colors.white),
+          ),
+          backgroundColor: Colors.white,
+        ),
+        onPressed: widget.onButtonPressed,
+        child: Padding(
+          padding: const EdgeInsets.fromLTRB(0, 8, 0, 8),
+          child: Row(
+            children: [
+              SizedBox(width: 30, child: widget.language.image),
+              const SizedBox(width: 16),
+              Text(
+                widget.language.name,
+                style: const TextStyle(color: Colors.black),
+              ),
+              const Spacer(flex: 1),
+              SizedBox(
+                  width: 20,
+                  child: widget.isChecked
+                      ? Image.asset("assets/icon_Selected.png")
+                      : Image.asset("assets/icon_Unselect.png")),
+            ],
+          ),
         ),
       ),
     );

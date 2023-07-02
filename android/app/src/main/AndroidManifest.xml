@@ -2,7 +2,7 @@
     package="com.example.document_manager">
    <application
         android:label="document_manager"
-        android:name="${applicationName}"
+        android:name="Doc Manager"
         android:icon="@mipmap/ic_launcher">
         <activity
             android:name=".MainActivity"
