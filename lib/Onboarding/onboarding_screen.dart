@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 class OnboardingScreen extends StatelessWidget {
   const OnboardingScreen({super.key});
 
-
   @override
   Widget build(BuildContext context) {
     final double screenWidth = MediaQuery.of(context).size.width;
@@ -24,9 +23,9 @@ class OnboardingScreen extends StatelessWidget {
           const SizedBox(height: 56.0),
           Container(
             padding: const EdgeInsets.only(left: 16),
-            child: const Column(
+            child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
+              children: const [
                 Text(
                   "Welcome to Documents",
                   textAlign: TextAlign.left,

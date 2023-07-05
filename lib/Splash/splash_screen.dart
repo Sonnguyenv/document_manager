@@ -18,7 +18,7 @@ class SplashScreen extends StatelessWidget {
         child: Image.asset("assets/icon_Splash.png",
             height: 140, width: 150),
       ),
-      backgroundColor: const Color(0xFFFDF7F2)
+      backgroundColor: Colors.white
     );
   }
 }
