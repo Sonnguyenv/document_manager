@@ -29,6 +29,7 @@ class _LanguageCellState extends State<LanguageCell> {
             // side: const BorderSide(color: Colors.white),
           ),
           backgroundColor: Colors.white,
+          // elevation: 0, // Shadow button
         ),
         onPressed: widget.onButtonPressed,
         child: Padding(

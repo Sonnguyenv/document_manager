@@ -1,3 +1,4 @@
+import 'package:document_manager/Common/constant_manager.dart';
 import 'package:document_manager/Header/base_header_screen.dart';
 import 'package:document_manager/Onboarding/onboarding_screen.dart';
 import 'package:document_manager/main.dart';
@@ -80,7 +81,7 @@ class _LanguagePageState extends State<LanguageScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white.withAlpha(730),
+      backgroundColor: Constant.colorF9F9F9,
       body: Column(
         children: [
           BaseHeaderScreen(

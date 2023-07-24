@@ -1,5 +1,7 @@
+import 'package:document_manager/Language/language_screen.dart';
 import 'package:document_manager/Splash/splash_screen.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_native_splash/flutter_native_splash.dart';
 import 'Header/base_header_screen.dart';
 
 void main() {
@@ -12,7 +14,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
-      home: SplashScreen(),
+      home: LanguageScreen(),
       debugShowCheckedModeBanner: false,
     );
   }
@@ -26,7 +28,6 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -40,10 +41,7 @@ class _MyHomePageState extends State<MyHomePage> {
               isHiddenButtonRight: true,
             ),
           ),
-          Expanded(
-              flex: 1,
-              child: ListView()
-          )
+          Expanded(flex: 1, child: ListView())
         ],
       ), // This trailing comma makes auto-formatting nicer for build methods.
     );

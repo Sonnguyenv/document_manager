@@ -23,9 +23,9 @@ class OnboardingScreen extends StatelessWidget {
           const SizedBox(height: 56.0),
           Container(
             padding: const EdgeInsets.only(left: 16),
-            child: Column(
+            child: const Column(
               crossAxisAlignment: CrossAxisAlignment.start,
-              children: const [
+              children: [
                 Text(
                   "Welcome to Documents",
                   textAlign: TextAlign.left,
