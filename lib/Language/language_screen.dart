@@ -91,7 +91,7 @@ class _LanguagePageState extends State<LanguageScreen> {
           ),
           Expanded(
             child: ListView.builder(
-              padding: const EdgeInsets.only(top: 10),
+              padding: const EdgeInsets.only(top: 0),
               itemCount: languages.length,
               itemBuilder: (context, index) {
                 return LanguageCell(

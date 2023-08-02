@@ -32,17 +32,21 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       // appBar: AppBar(title: const Text("Hello"), centerTitle: true),
-      body: Column(
-        children: [
-          const SizedBox(
-            height: 80,
-            child: BaseHeaderScreen(
-              title: "Hello",
-              isHiddenButtonRight: true,
-            ),
+      body: Container(
+        color: Colors.white,
+        child: SafeArea(
+          child: Column(
+            children: [
+              const SizedBox(
+                child: BaseHeaderScreen(
+                  title: "Hello",
+                  isHiddenButtonRight: true,
+                ),
+              ),
+              Expanded(flex: 1, child: ListView())
+            ],
           ),
-          Expanded(flex: 1, child: ListView())
-        ],
+        ),
       ), // This trailing comma makes auto-formatting nicer for build methods.
     );
   }
