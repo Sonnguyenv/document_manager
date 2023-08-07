@@ -1,7 +1,6 @@
 import 'package:document_manager/Common/constant_manager.dart';
 import 'package:document_manager/Header/base_header_screen.dart';
 import 'package:document_manager/Onboarding/onboarding_screen.dart';
-import 'package:document_manager/main.dart';
 import 'package:flutter/material.dart';
 import 'package:document_manager/Common/preference_manager.dart';
 import 'language_cell.dart';
@@ -91,7 +90,7 @@ class _LanguagePageState extends State<LanguageScreen> {
           ),
           Expanded(
             child: ListView.builder(
-              padding: const EdgeInsets.only(top: 0),
+              padding: const EdgeInsets.only(top: 10),
               itemCount: languages.length,
               itemBuilder: (context, index) {
                 return LanguageCell(

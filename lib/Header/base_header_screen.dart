@@ -14,10 +14,9 @@ class BaseHeaderScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SafeArea(
-      child: Container(
-        height: 44,
-        color: Colors.white,
+    return Container(
+      color: Colors.red,
+      child: SafeArea(
         child: Stack(
           alignment: Alignment.center,
           children: [

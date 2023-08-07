@@ -1,6 +1,7 @@
 import 'package:document_manager/Language/language_screen.dart';
 import 'package:document_manager/Splash/splash_screen.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter_native_splash/flutter_native_splash.dart';
 import 'Header/base_header_screen.dart';
 
@@ -13,7 +14,10 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
+      theme: ThemeData(
+        primarySwatch: Colors.green,
+      ),
       home: LanguageScreen(),
       debugShowCheckedModeBanner: false,
     );
